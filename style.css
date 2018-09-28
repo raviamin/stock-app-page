@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat-regular-webfont.woff') format('woff2');
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Segoe UI",Ubuntu,Helvetica,Arial,sans-serif;
+    background: #f2f2f2;
+}
+
+.content {
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 900px;
+    min-width: 700px;
+    min-height: 400px;
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.network-error {
+    display: none;
+    top: 100px;
+    padding: 20px;
+    background: #ff615b;
+    border-radius: 4px;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: all 0.5s ease-in-out
+
+}
+
+.loader {
+    background: url(images/loader-green.svg) 50% 50%/25px 25px no-repeat #ffffff;
+}
+
+.stock {
+    display: flex;
+    background: #fff;
+    border-bottom: 1px solid #dedede;
+}
+
+.stock:last-child {
+    border-bottom: none;
+    border-radius: 0 0 3px 3px;
+}
+
+.stock-name {
+    flex-grow: 1;
+    width: 20%;
+}
+
+.stock-time {
+    flex-grow: 1;
+    width: 30%;
+}
+
+.stock-price {
+    flex: 2 0 auto;
+    width: 50%;
+}
+
+.red {
+    color: #ff615b;
+    background: url(images/down-red.svg) 75% 50%/15px 15px no-repeat;
+}
+
+.green {
+    color: #0abe51;
+    background: url(images/up-green.svg) 75% 50%/15px 15px no-repeat;
+}
+
+.header {
+    background: #000;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+}
+
+.stock-name,
+.stock-price,
+.stock-time {
+    padding: 15px;
+    text-align: center;
+}
