@@ -24,6 +24,8 @@ function openWSConnection() {
             renderStocks(JSON.parse(messageEvent.data));
         };
     } catch (exception) {
+        document.getElementsByClassName("network-error")[0].style.display = "block";
+        document.getElementsByClassName("network-error")[0].innerHTML = "Connection Error"
         console.error(exception);
     }
 }
