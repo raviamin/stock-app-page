@@ -24,7 +24,7 @@ html, body {
 
 .wrapper {
     max-width: 900px;
-    min-width: 700px;
+    min-width: 600px;
     min-height: 400px;
     background: #fff;
     border: 1px solid #dedede;
@@ -79,12 +79,12 @@ html, body {
 
 .red {
     color: #ff615b;
-    background: url(images/down-red.svg) 75% 50%/15px 15px no-repeat;
+    background: url(images/down-red.svg) 62% 50%/15px 15px no-repeat;
 }
 
 .green {
     color: #0abe51;
-    background: url(images/up-green.svg) 75% 50%/15px 15px no-repeat;
+    background: url(images/up-green.svg) 62% 50%/15px 15px no-repeat;
 }
 
 .header {

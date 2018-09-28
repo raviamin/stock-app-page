@@ -36,7 +36,7 @@ function renderStocks(messageData) {
     var currentStock = messageData[i];
 
     var currentStockName = currentStock[0];
-    var currentStockPrice = currentStock[1];
+    var currentStockPrice = currentStock[1].toFixed(2);
     var stockUpdatedTime = Date.now();
 
     if(stockData[currentStockName] == undefined){
