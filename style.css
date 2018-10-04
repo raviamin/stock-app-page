@@ -67,6 +67,23 @@ html, body {
     width: 20%;
 }
 
+.stock-graph {
+    flex-grow: 1;
+    width: 20%;
+    max-width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.stock-graph canvas {
+    max-width: 100px;
+}
+
+.jqstooltip {
+    height: 20px !important;
+    width: 50px !important;
+}
+
 .stock-time {
     flex-grow: 1;
     width: 30%;
@@ -96,7 +113,8 @@ html, body {
 
 .stock-name,
 .stock-price,
-.stock-time {
+.stock-time,
+.stock-graph {
     padding: 15px;
     text-align: center;
 }
